@@ -1,4 +1,4 @@
-package com.example.rmsolution.Member.service;
+package com.example.rmsolution.Login.service;
 
 import com.example.rmsolution.Member.entity.Member;
 import com.example.rmsolution.Member.repository.MemberRepository;

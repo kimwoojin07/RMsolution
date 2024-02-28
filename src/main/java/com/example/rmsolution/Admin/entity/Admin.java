@@ -1,9 +1,11 @@
-package com.example.rmsolution.Member.entity;
+package com.example.rmsolution.Admin.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 
 @Entity
 public class Admin {
@@ -13,17 +15,13 @@ public class Admin {
     private Long id;
 
     private String username;
-    private String password;
+    private String passwordHash; // 해싱된 비밀번호로 저장
     private boolean isAdmin;
 
     public Admin() {
+        this.username = "admin";
+        setPassword("admin2580!"); // 비밀번호 해싱 및 설정
     }
-
-    public Admin(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
 
     public Long getId() {
         return id;
@@ -41,12 +39,13 @@ public class Admin {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPasswordHash() {
+        return passwordHash;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        // 비밀번호를 해싱하여 저장
+        this.passwordHash = new BCryptPasswordEncoder().encode(password);
     }
 
     public boolean isAdmin() {

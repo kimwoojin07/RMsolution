@@ -1,4 +1,4 @@
-package com.example.rmsolution.Member.dto;
+package com.example.rmsolution.Login.dto;
 
 public class LoginDTO {
 

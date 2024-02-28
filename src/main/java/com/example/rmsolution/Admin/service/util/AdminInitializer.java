@@ -1,8 +1,9 @@
-package com.example.rmsolution.Member.service.util;
+package com.example.rmsolution.Admin.service.util;
 
-import com.example.rmsolution.Member.service.AdminService;
+import com.example.rmsolution.Admin.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -13,6 +14,7 @@ public class AdminInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        adminService.createAdmin("admin","admin2580!");
+        // 애플리케이션이 시작될 때 관리자 계정을 생성
+        adminService.createAdmin();
     }
 }

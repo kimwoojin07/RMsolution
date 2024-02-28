@@ -1,6 +1,6 @@
-package com.example.rmsolution.Member.controller;
+package com.example.rmsolution.Login.controller;
 
-import com.example.rmsolution.Member.dto.LoginDTO;
+import com.example.rmsolution.Login.dto.LoginDTO;
 import com.example.rmsolution.Member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
