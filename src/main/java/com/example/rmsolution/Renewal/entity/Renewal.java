@@ -17,7 +17,7 @@ public class Renewal {
     @Column(name = "extension_period")
     private int extensionPeriod;
 
-    // 생성자, getter 및 setter 메서드
+
     public Renewal() {
     }
 

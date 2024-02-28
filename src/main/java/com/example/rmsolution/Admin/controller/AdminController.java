@@ -11,13 +11,13 @@ public class AdminController {
 
     @GetMapping("/dashboard")
     public String adminDashboard() {
-        // 관리자 대시보드 페이지로 이동
+        // 관리자 대시보드 페이지
         return "admin/dashboard";
     }
 
     @GetMapping("/subscriptions")
     public String adminSubscriptions() {
-        // 서비스 구독 관리 페이지로 이동
+        // 서비스 구독 관리 페이지로
         return "admin/subscriptions";
     }
 
@@ -29,7 +29,7 @@ public class AdminController {
 
     @GetMapping("/usage")
     public String serviceUsage() {
-        // 서비스 사용현황 대시보드 페이지로 이동
+        // 서비스 사용현황 대시보드 페이지로
         return "admin/usage";
     }
 

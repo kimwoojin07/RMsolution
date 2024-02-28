@@ -28,7 +28,6 @@ public class RenewalRequestDTO {
         this.extensionPeriod = extensionPeriod;
     }
 
-    // 구현 요청: toString() 메서드 추가
     @Override
     public String toString() {
         return "RenewalRequestDTO{" +

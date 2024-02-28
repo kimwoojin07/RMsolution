@@ -19,7 +19,6 @@ public class RenewalController {
 
     @PostMapping("/request")
     public ResponseEntity<String> processRenewalRequest(@RequestBody RenewalRequestDTO requestDTO) {
-        // 연장 요청을 서비스에 전달하고 처리 결과를 받아옴
         boolean success = renewalService.processRenewalRequest(requestDTO);
 
         if (success) {

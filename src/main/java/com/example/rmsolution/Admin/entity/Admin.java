@@ -15,7 +15,7 @@ public class Admin {
     private Long id;
 
     private String username;
-    private String passwordHash; // 해싱된 비밀번호로 저장
+    private String passwordHash;
     private boolean isAdmin;
 
     public Admin() {

@@ -14,7 +14,6 @@ public class AdminInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // 애플리케이션이 시작될 때 관리자 계정을 생성
         adminService.createAdmin();
     }
 }
