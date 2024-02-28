@@ -1,7 +1,7 @@
-package com.example.rmsolution.Member.controller;
+package com.example.rmsolution.Subscription.controller;
 
-import com.example.rmsolution.subscription.dto.SubscriptionRequestDTO;
-import com.example.rmsolution.subscription.service.SubscriptionService;
+import com.example.rmsolution.Subscription.dto.SubscriptionRequestDTO;
+import com.example.rmsolution.Subscription.service.SubscriptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,6 @@ public class SubscriptionController {
 
     @PostMapping("/apply")
     public ResponseEntity<String> applyForSubscription(@RequestBody SubscriptionRequestDTO requestDTO) {
-        // 입력된 정보를 서비스를 통해 처리합니다.
         boolean success = subscriptionService.processSubscriptionRequest(requestDTO);
 
         if (success) {

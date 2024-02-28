@@ -1,4 +1,4 @@
-package com.example.rmsolution.Member.service;
+package com.example.rmsolution.Member.repository;
 
 import com.example.rmsolution.Member.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;

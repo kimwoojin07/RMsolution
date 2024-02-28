@@ -1,4 +1,4 @@
-package com.example.rmsolution.Member.dto;
+package com.example.rmsolution.Subscription.dto;
 
 public class SubscriptionRequestDTO {
     private int numberOfUsers;  //사용인원
